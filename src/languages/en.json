@@ -1,0 +1,62 @@
+{
+  "alerts.title": "Alerts",
+  "invasions.title": "Invasions",
+  "invasions.noinvasions": "No Invasions today",
+  "factions": "Factions",
+  "location": "Location",
+  "sign_in": "rrr",
+  "tracker.complete": "Complete",
+  "tracker.missiontype": "missiontype",
+  "tracker.attacker": "Attacker",
+  "tracker.rewards": "rewards",
+  "tracker.defender": "Defender",
+  "credits": "Credits",
+  "pc": "PC",
+  "ps4": "Playstation 4",
+  "xb1": "Xbox One",
+  "swi": "Switch",
+  "posted": "Posted",
+  "rolled": "Rolled",
+  "unrolled": "Unrolled",
+  "bothroll": "Both",
+  "compatibility": "Weapon",
+  "avg": "Avg",
+  "stddev": "Stddev",
+  "min": "Min",
+  "max": "Max",
+  "pop": "Pop",
+  "median": "Median",
+  "Fomorian": "Fomorian",
+  "Razorback": "Razorback",
+  "noalerts": "No Alerts today",
+  "Darvo": {
+    "title": "Darvos Deals"
+  },
+  "nodeals": "No Deals today",
+  "left": "of",
+  "lefttime": "left",
+  "darvo": {
+    "item": "Item",
+    "price": "Price",
+    "stock": "Stock",
+    "timeleft": "Time left"
+  },
+  "outofstock": "Sold out",
+  "alert": {
+    "type": "Mission Type",
+    "location": "MissionLocation",
+    "ends": "Ends in",
+    "enemyfaction": "enemyfaction"
+  },
+  "tracker2": {
+    "attacker": "Attacker",
+    "location": "Location",
+    "type": "Mission Type",
+    "on": "on",
+    "desc": "Desc"
+  },
+  "faction": "Faction",
+  "tracker": {
+    "types": "Mission Type"
+  }
+}

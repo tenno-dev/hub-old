@@ -1,0 +1,25 @@
+{
+  "alerts.title": "Alerts",
+  "invasions.title": "Invasions",
+  "invasions.noinvasions": "No Invasions today",
+  "factions": "Factions",
+  "location": "Location",
+  "sign_in": "rrr",
+  "tracker.complete": "Complete",
+  "tracker.missiontype": "missiontype",
+  "tracker.attacker": "Angreifer",
+  "tracker.rewards": "Belohnung",
+  "tracker.defender": "Verteidiger",
+  "credits": "Credits",
+  "pc": "PC",
+  "ps4": "Playstation 4",
+  "xb1": "Xbox One",
+  "swi": "Switch",
+  "posted": "Gepostet",
+  "Fomorian": "Fomorianer",
+  "Razorback": "Razorback",
+  "noalerts": "Keine Alarmierungen vorhanden",
+  "alerts": {
+    "title": "Alarmierungen"
+  }
+}

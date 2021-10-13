@@ -1,0 +1,512 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "svelte-wf",
+      "version": "0.0.0",
+      "type": "module",
+      "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
+      },
+      "devDependencies": {
+        "@roxi/routify": "^3.0.0-next.19",
+        "@sveltejs/vite-plugin-svelte": "^1.0.0-next.26",
+        "autoprefixer": "^10.3.6",
+        "date-fns": "^2.24.0",
+        "luxon": "^2.0.2",
+        "postcss": "^8.3.8",
+        "svelte": "^3.43.1",
+        "svelte-preprocess": "^4.9.7",
+        "tailwindcss": "^2.2.16",
+        "vite": "^2.6.2",
+        "vite-plugin-windicss": "^1.4.8",
+        "windicss": "^3.1.8"
+      },
+      "dependencies": {
+        "@iconify/svelte": "^2.0.0",
+        "@macfja/svelte-persistent-store": "^1.2.0",
+        "@okrad/svelte-progressbar": "^1.11.2",
+        "@tenno-dev/svelte-countdown": "^1.0.5",
+        "deepmerge": "^4.2.2",
+        "mqtt": "^4.2.8",
+        "svelte-i18n": "^3.3.12",
+        "svelte-select": "^4.4.3",
+        "svelte-table": "^0.1.18",
+        "svelte-tabs": "^1.1.0",
+        "swiper": "^7.0.7",
+        "unplugin-icons": "^0.11.4",
+        "xss": "^1.0.9"
+      }
+    },
+    "prefix": "C:\\Users\\bitti\\Documents\\GitHub\\hub"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "C:\\Users\\bitti\\.pnpm-store\\v3",
+    "virtualStoreDir": "C:\\Users\\bitti\\Documents\\GitHub\\hub\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/autoprefixer/10.3.7",
+    "wanted": {
+      "dependentId": ".",
+      "name": "autoprefixer",
+      "rawSpec": "^10.3.6"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/autoprefixer/10.3.7",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/luxon/2.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "luxon",
+      "rawSpec": "^2.0.2"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/luxon/2.0.2",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@macfja/svelte-persistent-store/1.2.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@macfja/svelte-persistent-store",
+      "rawSpec": "^1.2.0"
+    }
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@macfja/svelte-persistent-store/1.2.0",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-preprocess/4.9.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-preprocess",
+      "rawSpec": "^4.9.7"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.9.8",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@iconify/svelte/2.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@iconify/svelte",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "13 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@iconify/svelte/2.0.0",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/postcss/8.3.9",
+    "wanted": {
+      "dependentId": ".",
+      "name": "postcss",
+      "rawSpec": "^8.3.8"
+    }
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss/8.3.9",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@okrad/svelte-progressbar/1.11.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@okrad/svelte-progressbar",
+      "rawSpec": "^1.11.2"
+    }
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@okrad/svelte-progressbar/1.11.2",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vite-plugin-windicss/1.4.11",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite-plugin-windicss",
+      "rawSpec": "^1.4.8"
+    }
+  },
+  "19 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vite-plugin-windicss/1.4.11",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/windicss/3.1.9",
+    "wanted": {
+      "dependentId": ".",
+      "name": "windicss",
+      "rawSpec": "^3.1.8"
+    }
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/windicss/3.1.9",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/deepmerge/4.2.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "deepmerge",
+      "rawSpec": "^4.2.2"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/deepmerge/4.2.2",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "24 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-table/0.1.19",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-table",
+      "rawSpec": "^0.1.18"
+    }
+  },
+  "25 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-table/0.1.19",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "26 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/mqtt/4.2.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "mqtt",
+      "rawSpec": "^4.2.8"
+    }
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mqtt/4.2.8",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "28 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/autoprefixer/10.3.7",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "29 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-tabs/1.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-tabs",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "30 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-tabs/1.1.0",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/luxon/2.0.2",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "32 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/vite-plugin-windicss/1.4.11",
+    "size": 7546,
+    "status": "started"
+  },
+  "33 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/date-fns/2.25.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "date-fns",
+      "rawSpec": "^2.24.0"
+    }
+  },
+  "34 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/date-fns/2.25.0",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "35 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-select/4.4.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-select",
+      "rawSpec": "^4.4.3"
+    }
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-select/4.4.3",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "37 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vite/2.6.7",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite",
+      "rawSpec": "^2.6.2"
+    }
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vite/2.6.7",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "39 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/unplugin-icons/0.11.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "unplugin-icons",
+      "rawSpec": "^0.11.4"
+    }
+  },
+  "40 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/unplugin-icons/0.11.4",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "41 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/windicss/3.1.9",
+    "size": 342583,
+    "status": "started"
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.9.8",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "43 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@macfja/svelte-persistent-store/1.2.0",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@iconify/svelte/2.0.0",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "45 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-i18n/3.3.13",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-i18n",
+      "rawSpec": "^3.3.12"
+    }
+  },
+  "46 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-i18n/3.3.13",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/postcss/8.3.9",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "48 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte/3.43.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte",
+      "rawSpec": "^3.43.1"
+    }
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte/3.43.2",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "50 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/xss/1.0.10",
+    "wanted": {
+      "dependentId": ".",
+      "name": "xss",
+      "rawSpec": "^1.0.9"
+    }
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/xss/1.0.10",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "52 debug pnpm:update-check": {
+    "currentVersion": "6.17.0",
+    "latestVersion": "6.17.0"
+  },
+  "53 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@okrad/svelte-progressbar/1.11.2",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "54 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/vite/2.6.7",
+    "size": 3591451,
+    "status": "started"
+  },
+  "55 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/deepmerge/4.2.2",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "56 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-table/0.1.19",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "57 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/mqtt/4.2.8",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "58 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-tabs/1.1.0",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "59 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/svelte-i18n/3.3.13",
+    "size": 12165,
+    "status": "started"
+  },
+  "60 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vite-plugin-windicss/1.4.11",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "fetched"
+  },
+  "61 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-select/4.4.3",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "62 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/unplugin-icons/0.11.4",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "found_in_store"
+  },
+  "63 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/swiper/7.0.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "swiper",
+      "rawSpec": "^7.0.7"
+    }
+  },
+  "64 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/swiper/7.0.8",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "65 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/xss/1.0.10",
+    "size": 30338,
+    "status": "started"
+  },
+  "66 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/svelte/3.43.2",
+    "size": 1386525,
+    "status": "started"
+  },
+  "67 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-i18n/3.3.13",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "fetched"
+  },
+  "68 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/swiper/7.0.8",
+    "size": 978122,
+    "status": "started"
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/xss/1.0.10",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "fetched"
+  },
+  "70 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tailwindcss/2.2.16",
+    "wanted": {
+      "dependentId": ".",
+      "name": "tailwindcss",
+      "rawSpec": "^2.2.16"
+    }
+  },
+  "71 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tailwindcss/2.2.16",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "72 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@sveltejs/vite-plugin-svelte/1.0.0-next.27",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@sveltejs/vite-plugin-svelte",
+      "rawSpec": "^1.0.0-next.26"
+    }
+  },
+  "73 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/vite-plugin-svelte/1.0.0-next.27",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "74 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@roxi/routify/3.0.0-next.26",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@roxi/routify",
+      "rawSpec": "^3.0.0-next.19"
+    }
+  },
+  "75 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@roxi/routify/3.0.0-next.26",
+    "requester": "C:\\Users\\bitti\\Documents\\GitHub\\hub",
+    "status": "resolved"
+  },
+  "76 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "@tenno-dev/svelte-countdown is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npmjs.org/@tenno-dev%2Fsvelte-countdown"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "@tenno-dev/svelte-countdown",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/@tenno-dev%2Fsvelte-countdown: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmjs.org/@tenno-dev%2Fsvelte-countdown: Not Found - 404\n    at RetryOperation._fn (C:\\Users\\bitti\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:85058:18)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+    }
+  }
+}

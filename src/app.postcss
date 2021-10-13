@@ -1,0 +1,81 @@
+@tailwind base;
+
+:root {
+	--color-bg-navbar: #375a7f;
+	--color-bg-primary: #222;
+	--color-bg-box: #303030;
+	--color-bg-newsbox: rgba(48, 48, 48, 0.829) !important;
+	--color-bg-boxaccent: grey;
+	--color-bg-secondary: #ffc402;
+	--color-bg-default: #fff;
+	--color-bg-inverse: #fff;
+	--color-text-primary: #bbb;
+	--color-text-secondary: #755f17;
+	--color-text-default: #444;
+	--color-text-default-soft: #999;
+	--color-text-inverse: #444;
+	--color-text-inverse-soft: #999;
+	--color-text-alert: #e53e3e;
+	--font-display: [ 'Helvetica Neue', helvetica, arial, sans-serif];
+	--font-body: [ 'Helvetica Neue', helvetica, arial, sans-serif];
+	--font-weight-normal: 400;
+	--font-weight-display: 400;
+	--font-weight-btn: 600;
+	--rounded-btn: 0.25rem;
+}
+.tooltip {
+	@apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+	@apply visible z-50;
+}
+[data-theme='light'] {
+	--color-bg-navbar: #375a7f;
+	--color-bg-primary: #222;
+	--color-bg-box: #303030;
+	--color-bg-newsbox: rgba(48, 48, 48, 0.829) !important;
+	--color-bg-boxaccent: grey;
+	--color-bg-secondary: #ffc402;
+	--color-bg-default: #fff;
+	--color-bg-inverse: #fff;
+	--color-text-primary: #bbb;
+	--color-text-secondary: #755f17;
+	--color-text-default: #444;
+	--color-text-default-soft: #999;
+	--color-text-inverse: #444;
+	--color-text-inverse-soft: #999;
+	--color-text-alert: #e53e3e;
+	--font-display: ['Helvetica Neue', helvetica, arial, sans-serif];
+	--font-body: ['Helvetica Neue', helvetica, arial, sans-serif];
+	--font-weight-normal: 400;
+	--font-weight-display: 400;
+	--font-weight-btn: 600;
+	--rounded-btn: 0.25rem;
+}
+[data-theme='dark'] {
+	--color-bg-navbar: #303030;
+	--color-bg-box: #303030;
+	--color-bg-newsbox: #2d3748 !important;
+	--color-bg-boxaccent: rgba(200, 225, 250, 0.2);
+	--color-bg-primary: #222;
+	--color-bg-secondary: #dcd0c0;
+	--color-bg-default: #f4f4f4;
+	--color-bg-inverse: #373737;
+	--color-text-primary: #a1a9b7;
+	--color-text-secondary: #927e7e;
+	--color-text-default: #373737;
+	--color-text-default-soft: #6a6a6a;
+	--color-text-inverse: #000;
+	--color-text-inverse-soft: #bbb;
+	--color-text-alert: #fc8181;
+	--font-display: ['Helvetica Neue', helvetica, arial, sans-serif];
+	--font-body: ['Helvetica Neue', helvetica, arial, sans-serif];
+	--font-weight-normal: 400;
+	--font-weight-display: 400;
+	--font-weight-btn: 600;
+	--rounded-btn: 0;
+}
+
+@tailwind components;
+@tailwind utilities;
