@@ -5,5 +5,5 @@ zone_id = 'beb3bcfb6eaa798a64b0c8abc214f372'
 usage_model = 'unbound'
 compatibility_flags = []
 workers_dev = true
-site = {bucket = "./build",entry-point = "./workers-site"}
+site = {bucket = "./dist",entry-point = "./workers-site"}
 compatibility_date = "2021-09-20"
