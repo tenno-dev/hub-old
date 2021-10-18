@@ -2,8 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches:
-      - master
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -18,7 +17,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@tenno-dev'
       - name: Install
-        run: npm i
+        run: npm ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm run build
