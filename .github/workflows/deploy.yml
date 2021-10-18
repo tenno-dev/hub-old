@@ -18,7 +18,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@tenno-dev'
       - name: Install
-        run: npm ci
+        run: npm i
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm run build
