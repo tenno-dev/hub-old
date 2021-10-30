@@ -4,3 +4,5 @@
 .DS_Store
 /workers-site
 .npmrc
+.routify/routes.default.js
+.routify/instance.default.js

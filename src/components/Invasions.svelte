@@ -25,7 +25,9 @@
 </script>
 
 <div class="h-auto overflow-hidden border-transparent rounded md:max-w-md sm:max-w-sm xl:max-w-xl">
-	<div class="px-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:px-6">
+	<div class="pr-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:pr-6">
+						<div class="i-mdi-sword-cross text-blue-400 text-3xl inline-block" />
+
 		{$_('invasions.title', { default: 'Invasions' })}
 	</div>
 	<div class="pt-0 bg-box text-primary">

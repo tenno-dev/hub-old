@@ -8,7 +8,9 @@
 <div
 	class="h-auto max-w-lg overflow-hidden border-transparent rounded md:max-w-md sm:max-w-sm xl:max-w-xl"
 >
-	<div class="px-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:px-6">
+	<div class="pr-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:pr-6">
+		<div class="i-mdi-cart text-blue-400 text-3xl inline-block" />
+
 		{$_('Darvo.title', { default: 'Darvos Deals' })}
 	</div>
 	<div class="pt-0 bg-box text-primary">
@@ -23,26 +25,23 @@
 			</div>
 		{:else}
 			<div
-				class="text-primary bg-box grid  grid-cols-4 py-2 px-2  text-center border-b-4 border-gray-600"
+				class="text-primary bg-box grid  grid-cols-6 py-2 px-2  text-center border-b-4 border-gray-600"
 			>
-				<div class="col-span-1">{$_('darvo.item')}</div>
-				<div class="col-span-1">{$_('darvo.price')}</div>
-				<div class="col-span-1">{$_('darvo.stock')}</div>
-				<div class="col-span-1">{$_('darvo.timeleft')}</div>
+				<div class="col-span-2">{$_('darvo.item')}</div>
+				<div class="col-span-2">{$_('darvo.price')}/{$_('darvo.stock')}</div>
+				<div class="col-span-2">{$_('darvo.timeleft')}</div>
 			</div>
 			{#each deals as deal}
-				<div class="grid grid-cols-4 auto-rows-min text-center		">
-					<div class="col-span-1">
+				<div class="grid grid-cols-6 auto-rows-min text-center		">
+					<div class="col-span-2">
 						{deal.item}
 					</div>
-					<div class="col-span-1">
+					<div class="col-span-2">
 						<strike class="text-red-400 font-bold">{deal.originalPrice}</strike> -><b
 							class="text-green-400"
 						>
 							{deal.salePrice}</b
-						>
-					</div>
-					<div class="col-span-1">
+						><br>
 						{#if deal.total - deal.sold == 0}<span class="text-red-400 font-bold"
 								>{$_('outofstock')}</span
 							>
@@ -57,7 +56,7 @@
 							{deal.total}
 						{/if}
 					</div>
-					<div class="col-span-1">
+					<div class="col-span-2">
 						<Countdown
 							from={deal.expiry}
 							dateFormat="YYYY-MM-DD H:m:s"
@@ -65,7 +64,7 @@
 							let:remaining
 						>
 							<div class="whatever">
-								<span class="text-xxs"> 
+								<span class="text-xxs">
 									{#if remaining.days > 0}
 										<span class="text-base"> {remaining.days}d:</span>{/if}
 									{#if remaining.hours > 0}

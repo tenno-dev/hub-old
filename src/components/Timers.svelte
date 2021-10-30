@@ -12,7 +12,9 @@
 <div
 	class="h-auto max-w-lg overflow-hidden border-transparent rounded md:max-w-md sm:max-w-sm xl:max-w-xl"
 >
-	<div class="px-4 pt-4 text-4xl font-bold bg-transparent text-primary text-tprimary sm:px-6">
+	<div class="pr-4 pt-4 text-4xl font-bold bg-transparent text-primary  sm:pr-6">
+		<div class="i-mdi-clock-outline text-blue-400 text-3xl inline-block" />
+
 		Timers
 	</div>
 	<div class="pt-0 bg-box text-primary">
@@ -154,17 +156,17 @@
 						>
 							<div>
 								<span class="text-xxs">
-										{#if remaining.days > 0}
-											<span class="text-base"> {remaining.days}d:</span>{/if}
-										{#if remaining.hours > 0}
-											<span class="text-base"> {remaining.hours}h:</span>{/if}
-										{#if remaining.minutes > 0}
-											<span class="text-base"> {remaining.minutes}m:</span>
-										{/if}
-										{#if remaining.seconds > 0}
-											<span class="text-base"> {remaining.seconds}s</span>
-										{/if}
-									</span>
+									{#if remaining.days > 0}
+										<span class="text-base"> {remaining.days}d:</span>{/if}
+									{#if remaining.hours > 0}
+										<span class="text-base"> {remaining.hours}h:</span>{/if}
+									{#if remaining.minutes > 0}
+										<span class="text-base"> {remaining.minutes}m:</span>
+									{/if}
+									{#if remaining.seconds > 0}
+										<span class="text-base"> {remaining.seconds}s</span>
+									{/if}
+								</span>
 								left
 							</div>
 						</Countdown>

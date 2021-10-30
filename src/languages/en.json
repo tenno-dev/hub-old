@@ -43,8 +43,8 @@
   },
   "outofstock": "Sold out",
   "alert": {
-    "type": "Mission Type",
-    "location": "MissionLocation",
+    "type": "Type",
+    "location": "Location",
     "ends": "Ends in",
     "enemyfaction": "enemyfaction"
   },

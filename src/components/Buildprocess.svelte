@@ -2,10 +2,20 @@
 	import ProgressBar from '@okrad/svelte-progressbar';
 	export let constructionProgress = undefined;
 	import { _ } from 'svelte-i18n'; // import translation function
+	function round100(input) {
+		if (input <= 100) {
+			return [input];
+		} else {
+			return [100];
+		}
+	}
 </script>
 
 <div class="h-auto  overflow-hidden border-transparent md:max-w-md sm:max-w-sm xl:max-w-xl">
-	<div class="px-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:px-6">Build Progress</div>
+	<div class="pr-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:pr-6">
+		<div class="i-mdi-progress-clock text-blue-400 text-3xl inline-block" />
+		Build Progress
+	</div>
 	<div class="pt-0 bg-box text-primary">
 		<div
 			class="text-primary bg-box grid  grid-cols-2 py-2 px-2  text-center border-b-4 border-gray-600"
@@ -27,7 +37,7 @@
 					thickness={9}
 					style="radial"
 					labelColor="white"
-					series={[constructionProgress.fomorianProgress]}
+					series={round100(constructionProgress.fomorianProgress)}
 					thresholds={[
 						{
 							till: 50,
@@ -54,7 +64,7 @@
 					thickness={9}
 					style="radial"
 					labelColor="white"
-					series={[constructionProgress.razorbackProgress]}
+					series={round100(constructionProgress.razorbackProgress)}
 					thresholds={[
 						{
 							till: 50,

@@ -1,6 +1,3 @@
-<script context="module">
-</script>
-
 <script>
 	// Import Swiper Svelte components
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
@@ -26,8 +23,10 @@
 <div class="w-full h-auto border-transparent rounded">
 	<div
 		v-if="nightwave && nightwave.DailyChallenges"
-		class="px-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:px-6"
+		class="inline-block pr-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:pr-6 before:i-mdi-alarm"
 	>
+		<div class="i-mdi-newspaper text-blue-400 text-3xl inline-block" />
+
 		News
 	</div>
 	<div class="border-transparent text-default">
@@ -80,3 +79,4 @@
 		{/if}
 	</div>
 </div>
+

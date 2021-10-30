@@ -6,7 +6,9 @@
 <div
 	class="h-auto max-w-lg overflow-hidden border-transparent rounded md:max-w-md sm:max-w-sm xl:max-w-xl"
 >
-	<div class="px-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:px-6">
+	<div class="pr-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:pr-6">
+		<div class="i-mdi-alarm text-blue-400 text-3xl inline-block" />
+
 		{$_('alerts.title', { default: 'Alerts' })}
 	</div>
 	<div class="pt-0 bg-box text-primary">
@@ -14,7 +16,7 @@
 			class="text-primary bg-box grid  grid-cols-4 py-2 px-2  text-center border-b-4 border-gray-600"
 		>
 			<div class="col-span-1">{$_('alert.type')}</div>
-			<div class="col-span-1">{$_('alert.location')}</div>
+			<div class="col-span-1">{$_('alert.location' )}</div>
 			<div class="col-span-1">{$_('alert.ends')}</div>
 			<div class="col-span-1">{$_('alert.enemyfaction')}</div>
 		</div>
