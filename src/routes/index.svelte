@@ -5,7 +5,7 @@
 	let theme;
 	import { onMount } from 'svelte';
 	import { wstate, selectedplatform } from '../stores/pc.js';
-	const apiURL = 'https://api3.tenno.dev/';
+	const apiURL = 'https://api.warframestat.us/';
 
 	import News from '../components/News.svelte';
 	import Alerts from '../components/Alerts.svelte';
@@ -29,7 +29,7 @@
 			$wstate = data;
 			loaded = true;
 		}
-		console.log('plat update ' + id);
+		//console.log('plat update ' + id);
 		fetchData(id);
 	}
 	onMount(() => {
@@ -42,11 +42,11 @@
 		state = $wstate;
 		const interval = setInterval(fetchData(platform), 60000);
 		if (!$wstate) {
-			console.log('empty');
+			//console.log('empty');
 			fetchData(platform);
 			loaded = true;
 		} else {
-			console.log('full');
+			//console.log('full');
 			state = $wstate;
 			loaded = true;
 		}
