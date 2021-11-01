@@ -11,8 +11,8 @@
 </script>
 
 <div class="h-auto max-w-lg overflow-hidden border-transparent md:max-w-md sm:max-w-sm xl:max-w-xl">
-	<div class="px-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:px-6">
-		Nightwave #{#if nightwave.season} {nightwave.season - 1} {:else} not active !{/if}
+	<div class="px-4 pt-4 text-2xl font-bold bg-transparent text-primary sm:px-6">
+		Nightwave {#if nightwave.season}Season {nightwave.season - 1} {:else} not active !{/if}
 	</div>
 	<div class="pt-0 bg-box text-primary">
 		{#if !nightwave}

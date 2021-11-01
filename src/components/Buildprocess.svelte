@@ -12,8 +12,8 @@
 </script>
 
 <div class="h-auto  overflow-hidden border-transparent md:max-w-md sm:max-w-sm xl:max-w-xl">
-	<div class="pr-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:pr-6">
-		<div class="i-mdi-progress-clock text-blue-400 text-3xl inline-block" />
+	<div class="pr-4 pt-4 text-2xl font-bold bg-transparent text-primary sm:pr-6">
+		<div class="i-mdi-progress-clock text-blue-400 text-2xl inline-block align-middle mb-1" />
 		Build Progress
 	</div>
 	<div class="pt-0 bg-box text-primary">

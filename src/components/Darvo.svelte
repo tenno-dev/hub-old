@@ -8,8 +8,8 @@
 <div
 	class="h-auto max-w-lg overflow-hidden border-transparent rounded md:max-w-md sm:max-w-sm xl:max-w-xl"
 >
-	<div class="pr-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:pr-6">
-		<div class="i-mdi-cart text-blue-400 text-3xl inline-block" />
+	<div class="pr-4 pt-4 text-2xl font-bold bg-transparent text-primary sm:pr-6">
+		<div class="i-mdi-cart text-blue-400 text-2xl inline-block align-middle mb-1" />
 
 		{$_('Darvo.title', { default: 'Darvos Deals' })}
 	</div>

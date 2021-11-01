@@ -20,12 +20,12 @@
 	$: news.sort((a, b) => (b.id > a.id ? 1 : -1));
 </script>
 
-<div class="w-full h-auto border-transparent rounded">
+<div class="w-full h-auto border-transparent">
 	<div
 		v-if="nightwave && nightwave.DailyChallenges"
-		class="inline-block pr-4 pt-4 text-4xl font-bold bg-transparent text-primary sm:pr-6 before:i-mdi-alarm"
+		class=" pr-4 pt-4 text-2xl font-bold bg-transparent text-primary sm:pr-6"
 	>
-		<div class="i-mdi-newspaper text-blue-400 text-3xl inline-block" />
+		<div class="i-mdi-newspaper text-blue-400 text-2xl inline-block  align-middle mb-1" />
 
 		News
 	</div>

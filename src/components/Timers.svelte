@@ -1,10 +1,10 @@
 <script>
 	import { onDestroy } from 'svelte';
 
-	export let earthCycle = undefined;
-	export let cetusCycle = undefined;
-	export let cambionCycle = undefined;
-	export let vallisCycle = undefined;
+	export let earthCycle = {};
+	export let cetusCycle = {};
+	export let cambionCycle = {};
+	export let vallisCycle = {};
 	import Countdown from '@tenno-dev/svelte-countdown/src/index.js';
 	import Icon from '@iconify/svelte';
 </script>
@@ -12,22 +12,12 @@
 <div
 	class="h-auto max-w-lg overflow-hidden border-transparent rounded md:max-w-md sm:max-w-sm xl:max-w-xl"
 >
-	<div class="pr-4 pt-4 text-4xl font-bold bg-transparent text-primary  sm:pr-6">
-		<div class="i-mdi-clock-outline text-blue-400 text-3xl inline-block" />
+	<div class="pr-4 pt-4 text-2xl font-bold bg-transparent text-primary  sm:pr-6">
+		<div class="i-mdi-clock-outline text-blue-400 text-2xl inline-block align-middle mb-1" />
 
 		Timers
 	</div>
 	<div class="pt-0 bg-box text-primary">
-		{#if !earthCycle}
-			<div class="text-primary">
-				<div
-					class="relative px-4 py-3 text-red-700 bg-transparent border border-red-400 rounded"
-					role="alert"
-				>
-					<strong class="font-bold">No Time info</strong>
-				</div>
-			</div>
-		{:else}
 			<div>
 				<div class="text-primary bg-box grid  grid-cols-4 py-2 px-2 border-b-4 border-gray-600">
 					<div class="w-full h-auto">Region</div>
@@ -173,6 +163,5 @@
 					</div>
 				</div>
 			</div>
-		{/if}
 	</div>
 </div>
