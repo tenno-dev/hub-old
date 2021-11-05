@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import { GET_PATCHES } from '../gql/getpatches';
 	import { operationStore, query, gql } from '@urql/svelte';
 	import { selectedplatform } from '../stores/pc.js';
@@ -25,17 +27,17 @@
 				break;
 
 			case 'ps4':
-				plat = 'psn';
+				plat = 'ps4';
 				//console.log(plat);
 				break;
 
 			case 'xb1':
-				plat = 'xbox';
+				plat = 'xb1';
 				//console.log(plat);
 				break;
 
 			case 'swi':
-				plat = 'switch';
+				plat = 'swi';
 				//console.log(plat);
 				break;
 
@@ -69,7 +71,7 @@
 			headerindex =
 				'https://cdn.tenno.dev/webp/https:' + x.patchversion[index].patchnotes[text].src;
 		} else {
-			//console.log(x.patchversion[index].patchnotes);
+			console.log(x.patchversion[index].patchnotes);
 			var sorted = x.patchversion[index].patchnotes.slice();
 			sorted = sorted.sort(function (a, b) {
 				if (a.release_date < b.release_date) return -1;
@@ -125,7 +127,7 @@
 				// Return nothing, means keep the default handling measure
 			}
 		});
-		//console.log(html);
+		console.log(html);
 		return html;
 	} /**/
 	var userData1 = false;
@@ -237,7 +239,7 @@
 										class="grid  grid-cols-5 pl-2"
 									>
 										<div class="w-full p-2 text-left number-col col-span-2">
-											{item3.title}
+											{item3.translations[0].title}
 										</div>
 										<div class="w-full p-2  number-col ">
 											{#if item3.release_date}
@@ -249,10 +251,9 @@
 												</span>
 											{/if}
 										</div>
-										{#if item3.majorpatch}
+										{#if ii == 0}
 											<div class="w-full p-2  col-span-1">
-												<div class="  items-center badge badge-primary">Major</div>
-											</div>
+												<div class="  items-center badge badge-primary">Major </div></div>
 										{/if}
 										{#if item3.hotfix}
 											<div class="w-full p-2 col-span-1">
@@ -262,7 +263,7 @@
 									{#if openedIndex == ii}
 										<div class="flex items-center border-grey-200 border-b-2">
 											<div class="w-full h-auto py-2 pl-2 bg-box">
-												<p>{@html updateimg(item3.body)}</p>
+												<p>{@html updateimg(item3.translations[0].body)}</p>
 											</div>
 										</div>
 									{/if}
