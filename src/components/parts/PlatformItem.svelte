@@ -2,7 +2,7 @@
 	// export let getSelectionLabel = undefined;
 	export let item = undefined;
 	function PlatformIcon(plat) {
-		console.log('select=' + plat);
+		//console.log('select=' + plat);
 		switch (plat) {
 			case 'pc':
 				return 'i-mdi-microsoft-windows text-black text-xl';
@@ -17,7 +17,7 @@
 		}
 	}
 	function PlatformName(plat) {
-		console.log(plat);
+		//console.log(plat);
 		switch (plat) {
 			case 'pc':
 				return 'PC';

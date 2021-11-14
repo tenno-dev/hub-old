@@ -78,9 +78,9 @@
 					cetusCycle={state.cetusCycle}
 					cambionCycle={state.cambionCycle}
 					vallisCycle={state.vallisCycle}
+					steelPath={state.steelPath}
 				/>
-				<Darvo deals={state.dailyDeals} />
-				
+ 				<Darvo deals={state.dailyDeals} />
 			</div>
 			<div class="block md:hidden w-full h-auto px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
 				<Darvo deals={state.dailyDeals} />
@@ -91,7 +91,8 @@
 					cetusCycle={state.cetusCycle}
 					cambionCycle={state.cambionCycle}
 					vallisCycle={state.vallisCycle}
-				/>
+					steelPath={state.steelPath}
+				/> 
 			</div>
 		</div>
 		<div class="flex flex-wrap xl:px-1">
