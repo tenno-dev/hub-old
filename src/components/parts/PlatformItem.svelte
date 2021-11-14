@@ -1,23 +1,22 @@
 <script>
 	// export let getSelectionLabel = undefined;
 	export let item = undefined;
-	import Icon from '@iconify/svelte';
 	function PlatformIcon(plat) {
-		console.log('select='+plat);
+		console.log('select=' + plat);
 		switch (plat) {
 			case 'pc':
-				return 'fa-brands:windows';
+				return 'i-mdi-microsoft-windows text-black text-xl';
 			case 'ps4':
-				return 'fa-brands:playstation';
+				return 'i-mdi-sony-playstation text-black text-xl';
 			case 'xb1':
-				return 'fa-brands:xbox';
+				return 'i-mdi-microsoft-xbox text-black text-xl';
 			case 'swi':
-				return 'cib:nintendo-switch';
+				return 'i-mdi-nintendo-switch text-black text-xl';
 			default:
 				return plat;
 		}
 	}
-		function PlatformName(plat) {
+	function PlatformName(plat) {
 		console.log(plat);
 		switch (plat) {
 			case 'pc':
@@ -35,7 +34,7 @@
 </script>
 
 <div class="customItem">
-	<Icon class="text-black" icon={PlatformIcon(item.value)} />
+	<div class={PlatformIcon(item.value)} />
 	<div class="pl-1 customItem_title text-black">
 		<div class="customItem_name">{PlatformName(item.value)}</div>
 	</div>

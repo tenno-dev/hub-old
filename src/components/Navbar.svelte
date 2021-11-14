@@ -58,7 +58,7 @@
 						</div>
 					</div>
 					<div class="hidden md:block">
-						<div class="ml-10 flex items-baseline space-x-4">
+						<div class="ml-10 flex items-baseline space-x-6 ">
 							<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 							<a
 								href="/"
@@ -77,7 +77,7 @@
 								class=" hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
 								>Rivendata</a
 							>
-							<div class="min-w-full  py-2">
+							<div class="w-full ">
 								<Select
 									class="w-full"
 									items={platformlist}

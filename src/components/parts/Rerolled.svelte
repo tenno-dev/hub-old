@@ -1,10 +1,9 @@
 <script>
 	export let row;
-	import Icon from '@iconify/svelte';
 </script>
 
 {#if row.rerolled}
-	<Icon class="inline" icon="fa-solid:check-circle" color="green" />
+	<div class="i-mdi-check-circle text-green-400 text-2xl" />
 {:else}
-	<Icon class="inline" icon="fa-solid:ban" color="red" />
+	<div class="i-mdi-cancel text-red-400 text-2xl" />
 {/if}
