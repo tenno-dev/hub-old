@@ -6,8 +6,9 @@
 	export let cambionCycle = {};
 	export let vallisCycle = {};
 	import Countdown from '@tenno-dev/svelte-countdown/src/index.js';
+	import { _ } from 'svelte-i18n';
 </script>
-
+ 
 <div
 	class="h-auto max-w-lg overflow-hidden border-transparent rounded md:max-w-md sm:max-w-sm xl:max-w-xl"
 >
@@ -28,10 +29,10 @@
 				<div class="w-full h-auto col-span-1 ">
 					{#if earthCycle.state == 'day'}
 						<div class="i-mdi-weather-sunny text-yellow-400 text-2xl" />
-						Day
+						{$_('timer.day')}
 					{:else}
 						<div class="i-mdi-moon-waning-crescent text-blue-300 text-2xl" />
-						{earthCycle.state}
+						{$_('timer.night')}
 					{/if}
 				</div>
 				<div class="w-full h-auto col-span-2 text-right">
@@ -68,10 +69,10 @@
 				<div class="w-full h-auto col-span-1 ">
 					{#if cetusCycle.state == 'day'}
 						<div class="i-mdi-weather-sunny text-yellow-400 text-2xl" />
-						{cetusCycle.state}
+						{$_('timer.day')}
 					{:else}
 						<div class="i-mdi-moon-waning-crescent text-blue-300 text-2xl" />
-						{cetusCycle.state}
+						{$_('timer.night')}
 					{/if}
 				</div>
 				<div class="w-full h-auto col-span-2 text-right">
@@ -106,10 +107,10 @@
 				<div class="w-full h-auto col-span-1 ">
 					{#if vallisCycle.state == 'warm'}
 						<div class="i-mdi-fire text-yellow-400 text-2xl" />
-						{vallisCycle.state}
+						{$_('timer.warm')}
 					{:else}
 						<div class="i-mdi-snowflake text-blue-300 text-2xl" />
-						{vallisCycle.state}
+						{$_('timer.cold')}
 					{/if}
 				</div>
 				<div class="w-full h-auto col-span-2 text-right">
@@ -132,7 +133,7 @@
 									<span class="text-base"> {remaining.seconds}s</span>
 								{/if}
 							</span>
-							left till {#if vallisCycle.state == 'day'}
+							left till {#if vallisCycle.state == 'warm'}
 								<div class="i-mdi-snowflake text-blue-300 text-2xl" />
 							{:else}
 								<div class="i-mdi-fire text-yellow-400 text-2xl" />

@@ -58,5 +58,11 @@
   "faction": "Faction",
   "tracker": {
     "types": "Mission Type"
+  },
+  "timer": {
+    "day": "Day",
+    "night": "Night",
+    "warm": "Warm",
+    "cold": "Cold"
   }
 }
