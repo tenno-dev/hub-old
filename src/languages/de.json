@@ -21,5 +21,12 @@
   "noalerts": "Keine Alarmierungen vorhanden",
   "alerts": {
     "title": "Alarmierungen"
+  },
+  "timer": {
+    "warm": "Warm",
+    "cold": "Kalt",
+    "night": "Nacht",
+    "day": "Tag",
+    "till": "bis"
   }
 }

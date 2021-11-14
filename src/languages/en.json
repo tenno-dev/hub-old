@@ -63,6 +63,7 @@
     "day": "Day",
     "night": "Night",
     "warm": "Warm",
-    "cold": "Cold"
+    "cold": "Cold",
+    "till": "left till"
   }
 }

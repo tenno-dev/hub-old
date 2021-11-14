@@ -60,7 +60,8 @@
 									<span class="text-base"> {remaining.seconds}s</span>
 								{/if}
 							</span>
-							left till {#if earthCycle.state == 'day'}
+							{$_('timer.till')}
+							{#if earthCycle.state == 'day'}
 								<div class="i-mdi-moon-waning-crescent text-blue-300 text-2xl" />
 							{:else}
 								<div class="i-mdi-weather-sunny text-yellow-400 text-2xl" />
@@ -98,7 +99,8 @@
 									<span class="text-base"> {remaining.seconds}s</span>
 								{/if}
 							</span>
-							left till {#if cetusCycle.state == 'day'}
+							{$_('timer.till')}
+							{#if cetusCycle.state == 'day'}
 								<div class="i-mdi-moon-waning-crescent text-blue-300 text-2xl" />
 							{:else}
 								<div class="i-mdi-weather-sunny text-yellow-400 text-2xl" />
@@ -137,7 +139,8 @@
 									<span class="text-base"> {remaining.seconds}s</span>
 								{/if}
 							</span>
-							left till {#if vallisCycle.state == 'warm'}
+							{$_('timer.till')}
+							{#if vallisCycle.state == 'warm'}
 								<div class="i-mdi-snowflake text-blue-300 text-2xl" />
 							{:else}
 								<div class="i-mdi-fire text-yellow-400 text-2xl" />
