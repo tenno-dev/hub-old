@@ -46,7 +46,7 @@
     "type": "Type",
     "location": "Location",
     "ends": "Ends in",
-    "enemyfaction": "enemyfaction"
+    "enemyfaction": "Faction"
   },
   "tracker2": {
     "attacker": "Attacker",

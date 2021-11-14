@@ -2,8 +2,6 @@
 	// @ts-nocheck
 
 	import { selectedplatform } from '../stores/pc';
-	//	import { base } from '$app/paths';
-	//	import { page } from '$app/stores';
 	import Select from 'svelte-select';
 	import { _, t } from 'svelte-i18n';
 	import Item from './parts/PlatformItem.svelte';
@@ -48,7 +46,7 @@
 <!-- <nav class="sticky top-0  z-10 w-full py-0 pin-t bg-navbar"> -->
 <nav class="bg-gray-800 w-full border-b border-gray-700 text-white" >
 	<div class="mx-auto sm:px-6 lg:px-8">
-		<div class="b">
+		<div  >
 			<div class="flex items-center justify-between h-16 px-4 sm:px-0">
 				<div class="flex items-center">
 					<div class="flex-shrink-0 text-white">

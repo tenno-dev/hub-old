@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 import routify from '@roxi/routify/vite-plugin';
 import WindiCSS from 'vite-plugin-windicss';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
-import Icons from 'unplugin-icons/vite';
 import Unocss from 'unocss/vite';
 import { presetAttributify, presetUno } from 'unocss';
 import presetIcons from '@unocss/preset-icons';
@@ -19,12 +18,12 @@ export default defineConfig({
 				}),
 				presetUno(),
 				presetIcons({
-					/* options */
+					extraProperties: {
+						display: 'inline-flex',
+						'vertical-align': 'middle'
+					}
 				})
 			]
-		}),
-		Icons({
-			compiler: 'svelte'
 		}),
 		WindiCSS({
 			scan: {

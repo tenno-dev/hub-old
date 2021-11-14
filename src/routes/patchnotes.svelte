@@ -90,7 +90,7 @@
 		openedIndex == index ? (openedIndex = -1) : (openedIndex = index);
 	}
 	function updateimg(text) {
-		var t = text;
+		var t = text
 		var imgproxy = 'https://cdn.tenno.dev/webp/';
 		var html = xss(t, {
 			onTagAttr: function (tag, name, value, isWhiteAttr) {
@@ -127,6 +127,7 @@
 				// Return nothing, means keep the default handling measure
 			}
 		});
+		html = html.replaceAll("\/\r\/\n", "<br>");
 		console.log(html);
 		return html;
 	} /**/
