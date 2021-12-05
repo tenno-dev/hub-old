@@ -1,8 +1,5 @@
 <script>
 	// @ts-nocheck
-	import DarkMode from 'svelte-dark-mode';
-
-	let theme;
 	import { onMount } from 'svelte';
 	import { wstate, selectedplatform } from '../stores/pc.js';
 	const apiURL = 'https://api.warframestat.us/';
@@ -14,7 +11,6 @@
 	import Invasions from '../components/Invasions.svelte';
 	import Buildprocess from '../components/Buildprocess.svelte';
 	import Darvo from '../components/Darvo.svelte';
-	/*i*/
 	let loaded = false;
 	let data = [];
 	var state = $wstate;
@@ -58,21 +54,19 @@
 	$: state = $wstate;
 	$: updateplatform($selectedplatform);
 </script>
-
-<!----->
 <svelte:head>
 	<title>Warframe Info Hub • WIP</title>
 </svelte:head>
 <div class="flex-1 overflow-y-auto py-16 pt-0 bg-dark-400">
 	{#if loaded && state}
 		<div class="flex flex-wrap xl:px-1">
-			<div class="w-full  sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/2 px-1 xl:px-2">
+			<div class="w-full  sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-1 xl:px-2">
 				<News news={state.news} />
 			</div>
 			<div class="w-full h-auto px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
 				<Nightwave nightwave={state.nightwave} />
 			</div>
-			<div class=" hidden xl:block w-full h-64 px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
+			<div class=" hidden lg:block w-full h-64 px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
 				<Timers
 					earthCycle={state.earthCycle}
 					cetusCycle={state.cetusCycle}
@@ -80,31 +74,32 @@
 					vallisCycle={state.vallisCycle}
 					steelPath={state.steelPath}
 				/>
- 				<Darvo deals={state.dailyDeals} />
-			</div>
-			<div class="block md:hidden w-full h-auto px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
 				<Darvo deals={state.dailyDeals} />
 			</div>
-			<div class="block md:hidden w-full h-auto px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
+			<div class=" hidden xl:block w-full h-64 px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
+				<Buildprocess constructionProgress={state.constructionProgress} />
+			</div>
+			<div class="block lg:hidden w-full h-auto px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
+				<Darvo deals={state.dailyDeals} />
+			</div>
+			<div class="block lg:hidden w-full h-auto px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
 				<Timers
 					earthCycle={state.earthCycle}
 					cetusCycle={state.cetusCycle}
 					cambionCycle={state.cambionCycle}
 					vallisCycle={state.vallisCycle}
 					steelPath={state.steelPath}
-				/> 
+				/>
 			</div>
 		</div>
+
 		<div class="flex flex-wrap xl:px-1">
 			<div class="w-full h-auto px-1 sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-1 xl:px-2">
 				<Alerts alerts={state.alerts} />
 			</div>
 
-			<div class="w-full  sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 px-1 xl:px-2">
+			<div class="w-full  sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-1 xl:px-2">
 				<Invasions invasions={state.invasions} />
-			</div>
-			<div class="w-full h-auto px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
-				<Buildprocess constructionProgress={state.constructionProgress} />
 			</div>
 		</div>
 	{:else}

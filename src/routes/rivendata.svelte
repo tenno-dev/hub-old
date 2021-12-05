@@ -4,7 +4,7 @@
 	import { _ } from 'svelte-i18n';
 
 	import rerolled from '../components/parts/Rerolled.svelte';
-	import { wstate, platforms, selectedlang, selectedplatform } from '../stores/pc.js';
+	import { wstate, selectedlang, selectedplatform } from '../stores/pc.js';
 	let rerolledstate = [
 		{ label: $_('rolled'), value: true, icon: 'fa-brands:windows' },
 		{ label: $_('unrolled'), value: false, icon: 'fa-brands:playstation' },
