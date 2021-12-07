@@ -33,7 +33,7 @@
 		"@okrad/svelte-progressbar": "^1.11.3",
 		"@tenno-dev/svelte-countdown": "^1.0.5",
 		"deepmerge": "^4.2.2",
-		"graphql": "15.7.2",
+		"graphql": "15.8.0",
 		"mqtt": "^4.2.8",
 		"svelte-i18n": "^3.3.13",
 		"svelte-select": "^4.4.6",
