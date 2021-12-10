@@ -11,6 +11,8 @@
 	import Invasions from '../components/Invasions.svelte';
 	import Buildprocess from '../components/Buildprocess.svelte';
 	import Darvo from '../components/Darvo.svelte';
+	import Trader from '../components/Trader.svelte';
+
 	let loaded = false;
 	let data = [];
 	var state = $wstate;
@@ -54,6 +56,7 @@
 	$: state = $wstate;
 	$: updateplatform($selectedplatform);
 </script>
+
 <svelte:head>
 	<title>Warframe Info Hub • WIP</title>
 </svelte:head>
@@ -74,13 +77,15 @@
 					vallisCycle={state.vallisCycle}
 					steelPath={state.steelPath}
 				/>
-				<Darvo deals={state.dailyDeals} />
+				<Buildprocess constructionProgress={state.constructionProgress} />
 			</div>
 			<div class=" hidden xl:block w-full h-64 px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
-				<Buildprocess constructionProgress={state.constructionProgress} />
+				<Darvo deals={state.dailyDeals} />
+				<Trader voidtrader={state.voidTrader} />
 			</div>
 			<div class="block lg:hidden w-full h-auto px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
 				<Darvo deals={state.dailyDeals} />
+				<Trader voidtrader={state.voidTrader} />
 			</div>
 			<div class="block lg:hidden w-full h-auto px-1 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4">
 				<Timers

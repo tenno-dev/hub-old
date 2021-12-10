@@ -27,9 +27,7 @@
 <div class="bg-box flex flex-col h-screen overflow-hidden">
 	<Navbar />
 
-	<slot>
-		<!-- pages in this folder and subfolders
-   will be rendered here -->
+	<slot> 
 	</slot>
 	<Footer />
 </div>

@@ -71,6 +71,20 @@ export default {
         "name": "rivendata"
       },
       "children": []
+    },
+    {
+      "meta": {},
+      "id": "_default_warframes_svelte",
+      "name": "warframes",
+      "module": () => import('../src/routes/warframes.svelte'),
+      "file": {
+        "path": "src/routes/warframes.svelte",
+        "dir": "src/routes",
+        "base": "warframes.svelte",
+        "ext": ".svelte",
+        "name": "warframes"
+      },
+      "children": []
     }
   ]
 }

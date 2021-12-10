@@ -3,10 +3,10 @@
 
 	import { onDestroy } from 'svelte';
 
-	export let earthCycle = {};
-	export let cetusCycle = {};
-	export let cambionCycle = {};
-	export let vallisCycle = {};
+	export let earthCycle ;
+	export let cetusCycle ;
+	export let cambionCycle ;
+	export let vallisCycle ;
 	export let steelPath = {};
 	import Countdown from '@tenno-dev/svelte-countdown/src/index.js';
 	import { _ } from 'svelte-i18n';
@@ -153,6 +153,8 @@
 				<div class="w-full h-auto col-span-1 ">
 					{cambionCycle.active}
 				</div>
+				{#if cambionCycle.expiry}
+
 				<div class="w-full h-auto col-span-2 text-right">
 					<Countdown
 						from={cambionCycle.expiry}
@@ -177,6 +179,7 @@
 						</div>
 					</Countdown>
 				</div>
+				{/if}
 				<!-- Steel path -->
 				<div class="w-full h-auto col-span-1 ">Steel Path</div>
 				<div class="w-full h-auto col-span-1 ">

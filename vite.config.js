@@ -10,7 +10,6 @@ import presetIcons from '@unocss/preset-icons';
 export default defineConfig({
 	plugins: [
 		routify(),
-		svelte(),
 		Unocss({
 			presets: [
 				presetAttributify({
@@ -25,6 +24,8 @@ export default defineConfig({
 				})
 			]
 		}),
+		svelte(),
+
 		WindiCSS({
 			scan: {
 				dirs: ['src'],
