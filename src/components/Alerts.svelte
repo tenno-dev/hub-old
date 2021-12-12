@@ -76,7 +76,7 @@
 											<span class="text-base"> {remaining.minutes}:</span>
 										{/if}
 										{#if remaining.seconds > 0}
- 										<span class="text-base"> {remaining.seconds}s</span>
+											<span class="text-base"> {remaining.seconds}s</span>
 										{/if}
 									</span>
 								</div>
@@ -86,34 +86,32 @@
 					</div>
 
 					{#if openedIndex == activeChallenge.id}
-								<div class="flex items-center border-b border-gray-600">
-									<div class="w-full h-auto py-2 pl-2 bg-box">
-										<div class="grid grid-cols-3 gap-0 px-2 py-1">
-											{#if activeChallenge.mission.reward.countedItems.length > 0 || activeChallenge.mission.reward.items.length > 0}
-												<div class="w-1/3">
-													Rewards:
-												</div>
-												<div class="col-span-2  break-normal">
-													{#each activeChallenge.mission.reward.items as attackerReward (activeChallenge.id)}
-														{attackerReward}
-													{/each}
-													{#if activeChallenge.mission.reward.countedItems}
-														{#each activeChallenge.mission.reward.countedItems as attackerReward (activeChallenge.id)}
-															{attackerReward.count} x {attackerReward.key}
-														{/each}
-													{/if}
-													{#if activeChallenge.mission.reward.credits > 0} <br>
-														& {activeChallenge.mission.reward.credits} {$_('credits')}
-													{/if}
-												</div>
+						<div class="flex items-center border-b border-gray-600">
+							<div class="w-full h-auto py-2 pl-2 bg-box">
+								<div class="grid grid-cols-3 gap-0 px-2 py-1">
+									{#if activeChallenge.mission.reward.countedItems.length > 0 || activeChallenge.mission.reward.items.length > 0}
+										<div class="w-1/3">Rewards:</div>
+										<div class="col-span-2  break-normal">
+											{#each activeChallenge.mission.reward.items as attackerReward (activeChallenge.id)}
+												{attackerReward}
+											{/each}
+											{#if activeChallenge.mission.reward.countedItems}
+												{#each activeChallenge.mission.reward.countedItems as attackerReward (activeChallenge.id)}
+													{attackerReward.count} x {attackerReward.key}
+												{/each}
 											{/if}
-											
+											{#if activeChallenge.mission.reward.credits > 0}
+												<br />
+												& {activeChallenge.mission.reward.credits}
+												{$_('credits')}
+											{/if}
 										</div>
-									</div>
+									{/if}
 								</div>
+							</div>
+						</div>
 					{/if}
 				{/if}
- 
 			{/each}
 			<!-- 				{JSON.stringify(activeChallenge)}
 

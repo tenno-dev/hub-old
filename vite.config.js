@@ -2,7 +2,8 @@ import { defineConfig } from 'vite';
 import routify from '@roxi/routify/vite-plugin';
 import WindiCSS from 'vite-plugin-windicss';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
-import Unocss from 'unocss/vite';
+import UnoCss from 'unocss/vite';
+import { extractorSvelte  } from '@unocss/core';
 import { presetAttributify, presetUno } from 'unocss';
 import presetIcons from '@unocss/preset-icons';
 
@@ -10,7 +11,8 @@ import presetIcons from '@unocss/preset-icons';
 export default defineConfig({
 	plugins: [
 		routify(),
-		Unocss({
+		UnoCss({
+			extractors: [extractorSvelte],
 			presets: [
 				presetAttributify({
 					/* preset options */
@@ -25,7 +27,6 @@ export default defineConfig({
 			]
 		}),
 		svelte(),
-
 		WindiCSS({
 			scan: {
 				dirs: ['src'],

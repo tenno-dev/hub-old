@@ -18,8 +18,10 @@
 	<div class="pt-0 bg-box text-primary">
 		<div>
 			{#if !voidtrader.active}
-			<div class="text-primary bg-box grid  grid-cols-4 py-2 px-2 border-b-4 border-gray-600">
-					<div class="w-full h-auto col-span-3">{voidtrader.character} arrives at {voidtrader.location} in</div>
+				<div class="text-primary bg-box grid  grid-cols-4 py-2 px-2 border-b-4 border-gray-600">
+					<div class="w-full h-auto col-span-3">
+						{voidtrader.character} arrives at {voidtrader.location} in
+					</div>
 					<div class="w-full h-auto col-span-1 text-right">
 						<Countdown
 							from={voidtrader.activation}
@@ -50,8 +52,10 @@
 					</div>
 				</div>
 			{:else}
-			<div class="text-primary bg-box grid  grid-cols-4 py-2 px-2 border-b-4 border-gray-600">
-					<div class="w-full h-auto col-span-3">{voidtrader.character} leaves {voidtrader.location} in</div>
+				<div class="text-primary bg-box grid  grid-cols-4 py-2 px-2 border-b-4 border-gray-600">
+					<div class="w-full h-auto col-span-3">
+						{voidtrader.character} leaves {voidtrader.location} in
+					</div>
 					<div class="w-full h-auto col-span-1 text-right">
 						<Countdown
 							from={voidtrader.expiry}

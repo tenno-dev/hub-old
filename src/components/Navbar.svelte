@@ -26,11 +26,10 @@
 		}
 	}
 	let platformlist = [
-		
 		{ label: $_('pc'), value: 'pc', icon: 'fa-brands:windows' },
 		{ label: $_('ps4'), value: 'ps4', icon: 'fa-brands:playstation' },
 		{ label: $_('xb1'), value: 'xb1', icon: 'fa-brands:xbox' },
-		{ label: $_('swi'), value: 'swi', icon: 'cib:nintendo-switch' }/**/
+		{ label: $_('swi'), value: 'swi', icon: 'cib:nintendo-switch' }
 	];
 	function handleSelect(event) {
 		$selectedplatform = event.detail.value;
@@ -44,9 +43,9 @@
 </script>
 
 <!-- <nav class="sticky top-0  z-10 w-full py-0 pin-t bg-navbar"> -->
-<nav class="bg-gray-800 w-full border-b border-gray-700 text-white" >
+<nav class="bg-gray-800 w-full border-b border-gray-700 text-white">
 	<div class="mx-auto sm:px-6 lg:px-8">
-		<div  >
+		<div>
 			<div class="flex items-center justify-between h-16 px-4 sm:px-0">
 				<div class="flex items-center">
 					<div class="flex-shrink-0 text-white">
@@ -76,6 +75,11 @@
 								href="/rivendata"
 								class=" hover:bg-gray-700 hover:text-white px-3 rounded-md text-sm font-medium"
 								>Rivendata</a
+							>
+							<a
+								href="/warframes"
+								class=" hover:bg-gray-700 hover:text-white px-3 rounded-md text-sm font-medium"
+								>Warframes</a
 							>
 							<div class="w-full ">
 								<Select
@@ -176,20 +180,23 @@
 				class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 				>Rivendata</a
 			>
-
-								<Select
-									class="w-full"
-									items={platformlist}
-									on:select={handleSelect}
-									bind="$selectedplatform"
-									bind:value={selectplatlabel}
-									{getOptionLabel}
-									isClearable={false}
-									listAutoWidth={false}
-									{getSelectionLabel}
-									{Item}
-									{Selection}
-								/>
+			<a
+				href="/warframes"
+				class=" hover:bg-gray-700 hover:text-white px-3 rounded-md text-sm font-medium">Warframes</a
+			>
+			<Select
+				class="w-full"
+				items={platformlist}
+				on:select={handleSelect}
+				bind="$selectedplatform"
+				bind:value={selectplatlabel}
+				{getOptionLabel}
+				isClearable={false}
+				listAutoWidth={false}
+				{getSelectionLabel}
+				{Item}
+				{Selection}
+			/>
 		</div>
 	</div>
 </nav>

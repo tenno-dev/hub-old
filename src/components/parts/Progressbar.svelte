@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	export let width;
 	export let attacker;
 	export let defender;

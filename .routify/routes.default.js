@@ -74,17 +74,48 @@ export default {
     },
     {
       "meta": {},
-      "id": "_default_warframes_svelte",
+      "id": "_default_warframes",
       "name": "warframes",
-      "module": () => import('../src/routes/warframes.svelte'),
+      "module": false,
       "file": {
-        "path": "src/routes/warframes.svelte",
+        "path": "src/routes/warframes",
         "dir": "src/routes",
-        "base": "warframes.svelte",
-        "ext": ".svelte",
+        "base": "warframes",
+        "ext": "",
         "name": "warframes"
       },
-      "children": []
+      "children": [
+        {
+          "meta": {
+            "dynamic": true
+          },
+          "id": "_default_warframes__name__svelte",
+          "name": "[name]",
+          "module": () => import('../src/routes/warframes/[name].svelte'),
+          "file": {
+            "path": "src/routes/warframes/[name].svelte",
+            "dir": "src/routes/warframes",
+            "base": "[name].svelte",
+            "ext": ".svelte",
+            "name": "[name]"
+          },
+          "children": []
+        },
+        {
+          "meta": {},
+          "id": "_default_warframes_index_svelte",
+          "name": "index",
+          "module": () => import('../src/routes/warframes/index.svelte'),
+          "file": {
+            "path": "src/routes/warframes/index.svelte",
+            "dir": "src/routes/warframes",
+            "base": "index.svelte",
+            "ext": ".svelte",
+            "name": "index"
+          },
+          "children": []
+        }
+      ]
     }
   ]
 }

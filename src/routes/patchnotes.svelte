@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+	// @ts-nocheck
 
 	import { GET_PATCHES } from '../gql/getpatches';
 	import { operationStore, query, gql } from '@urql/svelte';
@@ -90,7 +90,7 @@
 		openedIndex == index ? (openedIndex = -1) : (openedIndex = index);
 	}
 	function updateimg(text) {
-		var t = text
+		var t = text;
 		var imgproxy = 'https://cdn.tenno.dev/webp/';
 		var html = xss(t, {
 			onTagAttr: function (tag, name, value, isWhiteAttr) {
@@ -127,7 +127,7 @@
 				// Return nothing, means keep the default handling measure
 			}
 		});
-		html = html.replaceAll("\/\r\/\n", "<br>");
+		html = html.replaceAll('/\r/\n', '<br>');
 		console.log(html);
 		return html;
 	} /**/
@@ -191,7 +191,7 @@
 				</div>
 			</div>
 		{:else}
-					<div class="bg-red-50 border-l-4 border-red-400 p-4">
+			<div class="bg-red-50 border-l-4 border-red-400 p-4">
 				<div class="flex">
 					<div class="flex-shrink-0">
 						<!-- Heroicon name: solid/exclamation -->
@@ -254,7 +254,8 @@
 										</div>
 										{#if ii == 0}
 											<div class="w-full p-2  col-span-1">
-												<div class="  items-center badge badge-primary">Major </div></div>
+												<div class="  items-center badge badge-primary">Major</div>
+											</div>
 										{/if}
 										{#if item3.hotfix}
 											<div class="w-full p-2 col-span-1">

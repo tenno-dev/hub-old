@@ -3,10 +3,10 @@
 
 	import { onDestroy } from 'svelte';
 
-	export let earthCycle ;
-	export let cetusCycle ;
-	export let cambionCycle ;
-	export let vallisCycle ;
+	export let earthCycle;
+	export let cetusCycle;
+	export let cambionCycle;
+	export let vallisCycle;
 	export let steelPath = {};
 	import Countdown from '@tenno-dev/svelte-countdown/src/index.js';
 	import { _ } from 'svelte-i18n';
@@ -154,31 +154,30 @@
 					{cambionCycle.active}
 				</div>
 				{#if cambionCycle.expiry}
-
-				<div class="w-full h-auto col-span-2 text-right">
-					<Countdown
-						from={cambionCycle.expiry}
-						dateFormat="YYYY-MM-DD H:m:s"
-						zone="Europe/Berlin"
-						let:remaining
-					>
-						<div>
-							<span class="text-xxs">
-								{#if remaining.days > 0}
-									<span class="text-base"> {remaining.days}d:</span>{/if}
-								{#if remaining.hours > 0}
-									<span class="text-base"> {remaining.hours}h:</span>{/if}
-								{#if remaining.minutes > 0}
-									<span class="text-base"> {remaining.minutes}m:</span>
-								{/if}
-								{#if remaining.seconds > 0}
-									<span class="text-base"> {remaining.seconds}s</span>
-								{/if}
-							</span>
-							left
-						</div>
-					</Countdown>
-				</div>
+					<div class="w-full h-auto col-span-2 text-right">
+						<Countdown
+							from={cambionCycle.expiry}
+							dateFormat="YYYY-MM-DD H:m:s"
+							zone="Europe/Berlin"
+							let:remaining
+						>
+							<div>
+								<span class="text-xxs">
+									{#if remaining.days > 0}
+										<span class="text-base"> {remaining.days}d:</span>{/if}
+									{#if remaining.hours > 0}
+										<span class="text-base"> {remaining.hours}h:</span>{/if}
+									{#if remaining.minutes > 0}
+										<span class="text-base"> {remaining.minutes}m:</span>
+									{/if}
+									{#if remaining.seconds > 0}
+										<span class="text-base"> {remaining.seconds}s</span>
+									{/if}
+								</span>
+								left
+							</div>
+						</Countdown>
+					</div>
 				{/if}
 				<!-- Steel path -->
 				<div class="w-full h-auto col-span-1 ">Steel Path</div>

@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import { onMount } from 'svelte';
 	import Select from 'svelte-select';
 	import { _ } from 'svelte-i18n';
@@ -151,6 +153,7 @@
 		}
 	];
 </script>
+
 <svelte:head>
 	<title>Warframe Info Hub • Riven Data •WIP</title>
 </svelte:head>

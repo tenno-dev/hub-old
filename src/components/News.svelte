@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	// Import Swiper Svelte components
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
 
@@ -79,4 +81,3 @@
 		{/if}
 	</div>
 </div>
-

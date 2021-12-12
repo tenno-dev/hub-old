@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+	// @ts-nocheck
 
 	export let nightwave = {};
 	import Countdown from '@tenno-dev/svelte-countdown/src/index.js';
@@ -33,18 +33,18 @@
 				<Countdown from={nightwave.expiry} dateFormat="YYYY-MM-DD H:m:s" let:remaining>
 					<div class="whatever">
 						Ends in:
-								<span class="text-xxs">
-										{#if remaining.days > 0}
-											<span class="text-base"> {remaining.days}d:</span>{/if}
-										{#if remaining.hours > 0}
-											<span class="text-base"> {remaining.hours}h:</span>{/if}
-										{#if remaining.minutes > 0}
-											<span class="text-base"> {remaining.minutes}m:</span>
-										{/if}
-										{#if remaining.seconds > 0}
-											<span class="text-base"> {remaining.seconds}s</span>
-										{/if}
-									</span>
+						<span class="text-xxs">
+							{#if remaining.days > 0}
+								<span class="text-base"> {remaining.days}d:</span>{/if}
+							{#if remaining.hours > 0}
+								<span class="text-base"> {remaining.hours}h:</span>{/if}
+							{#if remaining.minutes > 0}
+								<span class="text-base"> {remaining.minutes}m:</span>
+							{/if}
+							{#if remaining.seconds > 0}
+								<span class="text-base"> {remaining.seconds}s</span>
+							{/if}
+						</span>
 					</div>
 				</Countdown>
 			</span>
@@ -63,17 +63,17 @@
 						<Countdown from={activeChallenge.expiry} dateFormat="YYYY-MM-DD H:m:s" let:remaining>
 							<div>
 								<span class="text-xxs">
-										{#if remaining.days > 0}
-											<span class="text-base"> {remaining.days}d:</span>{/if}
-										{#if remaining.hours > 0}
-											<span class="text-base"> {remaining.hours}h:</span>{/if}
-										{#if remaining.minutes > 0}
-											<span class="text-base"> {remaining.minutes}m:</span>
-										{/if}
-										{#if remaining.seconds > 0}
-											<span class="text-base"> {remaining.seconds}s</span>
-										{/if}
-									</span>
+									{#if remaining.days > 0}
+										<span class="text-base"> {remaining.days}d:</span>{/if}
+									{#if remaining.hours > 0}
+										<span class="text-base"> {remaining.hours}h:</span>{/if}
+									{#if remaining.minutes > 0}
+										<span class="text-base"> {remaining.minutes}m:</span>
+									{/if}
+									{#if remaining.seconds > 0}
+										<span class="text-base"> {remaining.seconds}s</span>
+									{/if}
+								</span>
 							</div>
 						</Countdown>
 					</div>

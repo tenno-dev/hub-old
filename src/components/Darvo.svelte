@@ -41,7 +41,7 @@
 							class="text-green-400"
 						>
 							{deal.salePrice}</b
-						><br>
+						><br />
 						{#if deal.total - deal.sold == 0}<span class="text-red-400 font-bold"
 								>{$_('outofstock')}</span
 							>
@@ -49,11 +49,12 @@
 								{deal.total} left</span
 							>
 						{:else}
-						<span class="text-yellow-400 ">
-							{deal.total - deal.sold}
-							{$_('left')}
-							{deal.total} left </span>
- 						{/if}
+							<span class="text-yellow-400 ">
+								{deal.total - deal.sold}
+								{$_('left')}
+								{deal.total} left
+							</span>
+						{/if}
 					</div>
 					<div class="col-span-2">
 						<Countdown

@@ -1,7 +1,7 @@
 <script>
 	// export let getSelectionLabel = undefined;
 	export let item = undefined;
- 	function PlatformIcon(plat) {
+	function PlatformIcon(plat) {
 		//console.log('select='+plat);
 		switch (plat) {
 			case 'pc':
@@ -16,7 +16,7 @@
 				return plat;
 		}
 	}
-		function PlatformName(plat) {
+	function PlatformName(plat) {
 		//console.log(plat);
 		switch (plat) {
 			case 'pc':
@@ -34,7 +34,7 @@
 </script>
 
 <div class="customItem">
-		<div class={PlatformIcon(item.value)} />
+	<div class={PlatformIcon(item.value)} />
 	<div class="pl-1 customItem_title text-black">
 		<div class="customItem_name">{PlatformName(item.value)}</div>
 	</div>

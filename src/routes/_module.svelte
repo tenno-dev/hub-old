@@ -27,7 +27,6 @@
 <div class="bg-box flex flex-col h-screen overflow-hidden">
 	<Navbar />
 
-	<slot> 
-	</slot>
+	<slot />
 	<Footer />
 </div>

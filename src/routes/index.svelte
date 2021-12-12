@@ -27,7 +27,6 @@
 			$wstate = data;
 			loaded = true;
 		}
-		//console.log('plat update ' + id);
 		fetchData(id);
 	}
 	onMount(() => {
@@ -37,14 +36,14 @@
 			$wstate = data;
 			loaded = true;
 		}
+		fetchData(platform);
 		state = $wstate;
+
 		const interval = setInterval(fetchData(platform), 60000);
 		if (!$wstate) {
-			//console.log('empty');
 			fetchData(platform);
 			loaded = true;
 		} else {
-			//console.log('full');
 			state = $wstate;
 			loaded = true;
 		}
