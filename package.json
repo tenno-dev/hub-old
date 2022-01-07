@@ -31,7 +31,7 @@
 		"@macfja/svelte-persistent-store": "^1.2.0",
 		"@okrad/svelte-progressbar": "^1.11.3",
 		"@tenno-dev/svelte-countdown": "^1.0.5",
-		"@unocss/core": "^0.16.3",
+		"@unocss/core": "^0.22.0",
 		"deepmerge": "^4.2.2",
 		"graphql": "15.7.2",
 		"mqtt": "^4.2.8",
