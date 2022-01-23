@@ -6,3 +6,4 @@
 .npmrc
 # Routify temp directory
 .routify/
+.npmrc
