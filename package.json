@@ -39,7 +39,7 @@
 		"svelte-select": "^4.4.7",
 		"svelte-table": "0.3.3",
 		"svelte-tabs": "^1.1.0",
-		"swiper": "^7.4.1",
+		"swiper": "^8.0.0",
 		"unplugin-icons": "0.13.0",
 		"xss": "^1.0.10"
 	}
