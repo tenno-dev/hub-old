@@ -34,7 +34,7 @@
 		"@unocss/core": "^0.22.5",
 		"deepmerge": "^4.2.2",
 		"graphql": "16.2.0",
-		"mqtt": "^4.3.4",
+		"mqtt": "^4.3.5",
 		"svelte-i18n": "^3.3.13",
 		"svelte-select": "^4.4.7",
 		"svelte-table": "0.3.3",
