@@ -37,7 +37,7 @@
 		"mqtt": "^4.3.4",
 		"svelte-i18n": "^3.3.13",
 		"svelte-select": "^4.4.7",
-		"svelte-table": "0.3.3",
+		"svelte-table": "0.3.4",
 		"svelte-tabs": "^1.1.0",
 		"swiper": "^7.4.1",
 		"unplugin-icons": "0.13.0",
