@@ -28,7 +28,7 @@
 		"windicss": "^3.4.3"
 	},
 	"dependencies": {
-		"@macfja/svelte-persistent-store": "^1.2.0",
+		"@macfja/svelte-persistent-store": "^1.3.0",
 		"@okrad/svelte-progressbar": "^1.11.3",
 		"@tenno-dev/svelte-countdown": "^1.0.5",
 		"@unocss/core": "^0.22.5",
