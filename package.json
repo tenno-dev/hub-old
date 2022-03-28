@@ -41,6 +41,6 @@
 		"svelte-tabs": "^1.1.0",
 		"swiper": "^7.4.1",
 		"unplugin-icons": "0.13.0",
-		"xss": "^1.0.10"
+		"xss": "^1.0.11"
 	}
 }
